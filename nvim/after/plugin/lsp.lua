@@ -23,7 +23,7 @@ lsp_zero.extend_lspconfig({
   capabilities = require('cmp_nvim_lsp').default_capabilities(),
 })
 
-require('lspconfig').clangd.setup({})
+require('lspconfig').clangd.setup({ init_options = {compilationDatabasePath="./build"}})
 -- require('lspconfig').rust_analyzer.setup({})
 
 ---
